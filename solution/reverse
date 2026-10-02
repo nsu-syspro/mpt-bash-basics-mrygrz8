@@ -1,8 +1,8 @@
 #!/bin/bash
-input_lines=()
-while IFS= read -r input_line; do
-  input_lines+=("$input_line")
+lines=()
+while IFS= read -r line; do
+  lines+=("$line")
 done
-for ((i = ${#input_lines[0]} - 1; i >= 0; i--)); do
-  echo "${input_lines[$i]}"
+for ((i = ${#lines[@]} - 1; i >= 0; i--)); do
+  echo "${lines[$i]}"
 done

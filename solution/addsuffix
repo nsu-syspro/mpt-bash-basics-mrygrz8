@@ -1,6 +1,6 @@
 #!/bin/bash
 suffix=$1
 shift
-for fine_name in "$@"; do
-  mv "$file_name" "${file_name}${suffix}"
+for file in "$@"; do
+  mv "$file" "${file}${suffix}"
 done
