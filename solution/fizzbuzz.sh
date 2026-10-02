@@ -8,6 +8,6 @@ for ((i = 1; i <= n; i++)); do
   elif ((i % 5 == 0)); then
     echo "Buzz"
   else
-    echo "$1"
+    echo "$i"
   fi
 done
