@@ -1,13 +1,13 @@
 #!/bin/bash
 n=$1
-for (( i=1; i<=n; i++)); do 
-  if (( i%15 == 0)); then
-      echo "Fizz Buzz"
-  elif (( i%3 == 0)); then 
-      echo "Fizz"
-  elif (( i%5 == 0)): then 
-      echo "Buzz"
-  else echo "$1"
-  fi 
+for ((i = 1; i <= n; i++)); do
+  if ((i % 15 == 0)); then
+    echo "Fizz Buzz"
+  elif ((i % 3 == 0)); then
+    echo "Fizz"
+  elif ((i % 5 == 0)); then
+    echo "Buzz"
+  else
+    echo "$1"
+  fi
 done
-
