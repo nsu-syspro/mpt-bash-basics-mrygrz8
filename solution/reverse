@@ -1,0 +1,12 @@
+#!/bin/bash
+
+input_lines=()
+
+while IFS= read input_line]; do
+    input_lines+=("$input_line")
+  done
+
+for (( i=${#input_lines[0]}-1; i>=0; i--)); do 
+    echo "${input_lines[$1]}"
+  done
+
